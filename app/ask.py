@@ -11,6 +11,7 @@
 """
 
 import argparse
+import time
 
 from google import genai
 from google.genai import errors
@@ -23,7 +24,11 @@ DEFAULT_QUESTION = "AIE2026の講座の宿題にある「3レベル」とは何�
 
 def ask(question: str) -> str:
     client = genai.Client(api_key=get_api_key())
+    # 第1回 宿題（発展）: Gemini を呼ぶ直前と直後の時刻の差で、応答時間を測る
+    start = time.perf_counter()
     response = client.models.generate_content(model=MODEL, contents=question)
+    elapsed = time.perf_counter() - start
+    print(f"[時間] 応答 {elapsed:.2f} 秒")
 
     # 第1回 演習: response.usage_metadata から入力トークン数と出力トークン数を表示する
     #   思考（thoughts）のトークンは出力とは別に数えられ、合計には含まれる
