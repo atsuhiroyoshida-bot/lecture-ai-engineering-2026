@@ -1,0 +1,282 @@
+{
+  "version": "2026-10-30",
+  "note": "第2回 宿題（発展）の評価の質問。same は学習データと同じ言い回し、paraphrase は別名か別の言い回し、unknown は用語集に無い語",
+  "refusal_phrases": [
+    "わかりません",
+    "分かりません",
+    "知りません",
+    "記載がありません",
+    "見つかりません",
+    "情報がありません",
+    "存在しません",
+    "確認が必要",
+    "不明です"
+  ],
+  "questions": [
+    {
+      "id": "S01",
+      "category": "same",
+      "kind": "general",
+      "term": "LoRA",
+      "question": "「LoRA」とは何ですか？",
+      "must_include": [
+        "固定",
+        "行列"
+      ]
+    },
+    {
+      "id": "S02",
+      "category": "same",
+      "kind": "general",
+      "term": "量子化",
+      "question": "「量子化」とは何ですか？",
+      "must_include": [
+        "ビット",
+        "メモリ"
+      ]
+    },
+    {
+      "id": "S03",
+      "category": "same",
+      "kind": "general",
+      "term": "エポック",
+      "question": "「エポック」とは何ですか？",
+      "must_include": [
+        "学習データ",
+        "周"
+      ]
+    },
+    {
+      "id": "S04",
+      "category": "same",
+      "kind": "general",
+      "term": "ハルシネーション",
+      "question": "「ハルシネーション」とは何ですか？",
+      "must_include": [
+        "事実",
+        "もっともらし"
+      ]
+    },
+    {
+      "id": "S05",
+      "category": "same",
+      "kind": "general",
+      "term": "トークン",
+      "question": "「トークン」とは何ですか？",
+      "must_include": [
+        "最小単位",
+        "分割"
+      ]
+    },
+    {
+      "id": "S06",
+      "category": "same",
+      "kind": "course",
+      "term": "宿題の3レベル",
+      "question": "「宿題の3レベル」とは何ですか？",
+      "must_include": [
+        "基礎",
+        "発展"
+      ]
+    },
+    {
+      "id": "S07",
+      "category": "same",
+      "kind": "course",
+      "term": "answer.md",
+      "question": "「answer.md」とは何ですか？",
+      "must_include": [
+        "結果",
+        "PR"
+      ]
+    },
+    {
+      "id": "S08",
+      "category": "same",
+      "kind": "course",
+      "term": "lecNN-start タグ",
+      "question": "「lecNN-start タグ」とは何ですか？",
+      "must_include": [
+        "演習開始",
+        "ブランチ"
+      ]
+    },
+    {
+      "id": "S09",
+      "category": "same",
+      "kind": "course",
+      "term": "既定モデル",
+      "question": "「既定モデル」とは何ですか？",
+      "must_include": [
+        "gemini-3.5-flash-lite",
+        "レート制限"
+      ]
+    },
+    {
+      "id": "S10",
+      "category": "same",
+      "kind": "course",
+      "term": "Pi",
+      "question": "「Pi」とは何ですか？",
+      "must_include": [
+        "ターミナル",
+        "コーディングエージェント"
+      ]
+    },
+    {
+      "id": "P01",
+      "category": "paraphrase",
+      "kind": "general",
+      "how": "alias",
+      "term": "LoRA",
+      "question": "Low-Rank Adaptation とは何ですか？",
+      "must_include": [
+        "固定",
+        "行列"
+      ]
+    },
+    {
+      "id": "P02",
+      "category": "paraphrase",
+      "kind": "general",
+      "how": "rephrase",
+      "term": "量子化",
+      "question": "初心者です。量子化って何のことですか？",
+      "must_include": [
+        "ビット",
+        "メモリ"
+      ]
+    },
+    {
+      "id": "P03",
+      "category": "paraphrase",
+      "kind": "general",
+      "how": "alias",
+      "term": "エポック",
+      "question": "epoch とは何ですか？",
+      "must_include": [
+        "学習データ",
+        "周"
+      ]
+    },
+    {
+      "id": "P04",
+      "category": "paraphrase",
+      "kind": "general",
+      "how": "rephrase",
+      "term": "ハルシネーション",
+      "question": "初心者です。ハルシネーションって何のことですか？",
+      "must_include": [
+        "事実",
+        "もっともらし"
+      ]
+    },
+    {
+      "id": "P05",
+      "category": "paraphrase",
+      "kind": "general",
+      "how": "alias",
+      "term": "トークン",
+      "question": "token とは何ですか？",
+      "must_include": [
+        "最小単位",
+        "分割"
+      ]
+    },
+    {
+      "id": "P06",
+      "category": "paraphrase",
+      "kind": "course",
+      "how": "rephrase",
+      "term": "宿題の3レベル",
+      "question": "初心者です。宿題の3レベルって何のことですか？",
+      "must_include": [
+        "基礎",
+        "発展"
+      ]
+    },
+    {
+      "id": "P07",
+      "category": "paraphrase",
+      "kind": "course",
+      "how": "alias",
+      "term": "answer.md",
+      "question": "解答ファイルとは何ですか？",
+      "must_include": [
+        "結果",
+        "PR"
+      ]
+    },
+    {
+      "id": "P08",
+      "category": "paraphrase",
+      "kind": "course",
+      "how": "rephrase",
+      "term": "lecNN-start タグ",
+      "question": "初心者です。lecNN-start タグって何のことですか？",
+      "must_include": [
+        "演習開始",
+        "ブランチ"
+      ]
+    },
+    {
+      "id": "P09",
+      "category": "paraphrase",
+      "kind": "course",
+      "how": "alias",
+      "term": "既定モデル",
+      "question": "デフォルトモデルとは何ですか？",
+      "must_include": [
+        "gemini-3.5-flash-lite",
+        "レート制限"
+      ]
+    },
+    {
+      "id": "P10",
+      "category": "paraphrase",
+      "kind": "course",
+      "how": "rephrase",
+      "term": "Pi",
+      "question": "初心者です。Pi って何のことですか？",
+      "must_include": [
+        "ターミナル",
+        "コーディングエージェント"
+      ]
+    },
+    {
+      "id": "U01",
+      "category": "unknown",
+      "kind": "real",
+      "term": "蒸留",
+      "question": "「蒸留」とは何ですか？"
+    },
+    {
+      "id": "U02",
+      "category": "unknown",
+      "kind": "real",
+      "term": "MoE",
+      "question": "「MoE」とは何ですか？"
+    },
+    {
+      "id": "U03",
+      "category": "unknown",
+      "kind": "real",
+      "term": "DoRA",
+      "question": "「DoRA」とは何ですか？"
+    },
+    {
+      "id": "U04",
+      "category": "unknown",
+      "kind": "fictional",
+      "term": "lecNN-end タグ",
+      "question": "「lecNN-end タグ」とは何ですか？"
+    },
+    {
+      "id": "U05",
+      "category": "unknown",
+      "kind": "fictional",
+      "term": "review.md",
+      "question": "「review.md」とは何ですか？"
+    }
+  ]
+}
