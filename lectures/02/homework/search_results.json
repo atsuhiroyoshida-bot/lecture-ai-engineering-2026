@@ -1,0 +1,684 @@
+{
+  "search_substring": {
+    "summary": {
+      "label": "search_substring",
+      "seconds": 0.001956,
+      "same": "10/10",
+      "paraphrase": "10/10",
+      "unknown": "3/5"
+    },
+    "rows": [
+      {
+        "id": "S01",
+        "category": "same",
+        "term": "LoRA",
+        "question": "「LoRA」とは何ですか？",
+        "found_term": "LoRA",
+        "matched_name": "LoRA",
+        "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+        "hit": [
+          "固定",
+          "行列"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S02",
+        "category": "same",
+        "term": "量子化",
+        "question": "「量子化」とは何ですか？",
+        "found_term": "量子化",
+        "matched_name": "量子化",
+        "raw": "モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。",
+        "hit": [
+          "ビット",
+          "メモリ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S03",
+        "category": "same",
+        "term": "エポック",
+        "question": "「エポック」とは何ですか？",
+        "found_term": "エポック",
+        "matched_name": "エポック",
+        "raw": "学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。",
+        "hit": [
+          "学習データ",
+          "周"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S04",
+        "category": "same",
+        "term": "ハルシネーション",
+        "question": "「ハルシネーション」とは何ですか？",
+        "found_term": "ハルシネーション",
+        "matched_name": "ハルシネーション",
+        "raw": "LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑える。",
+        "hit": [
+          "事実",
+          "もっともらし"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S05",
+        "category": "same",
+        "term": "トークン",
+        "question": "「トークン」とは何ですか？",
+        "found_term": "トークン",
+        "matched_name": "トークン",
+        "raw": "LLMがテキストを扱う最小単位。単語や文字の断片に分割される。APIの料金、レート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。日本語は英語より1文字あたりのトークン数が多くなりやすい。",
+        "hit": [
+          "最小単位",
+          "分割"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S06",
+        "category": "same",
+        "term": "宿題の3レベル",
+        "question": "「宿題の3レベル」とは何ですか？",
+        "found_term": "宿題の3レベル",
+        "matched_name": "宿題の3レベル",
+        "raw": "AIE2026の宿題の構成。「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」の3段階があり、どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。",
+        "hit": [
+          "基礎",
+          "発展"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S07",
+        "category": "same",
+        "term": "answer.md",
+        "question": "「answer.md」とは何ですか？",
+        "found_term": "answer.md",
+        "matched_name": "answer.md",
+        "raw": "AIE2026で各回の演習・宿題の結果を書くファイル。lectures/NN/answer.md にあり、取り組んだレベル・やったこと・結果・気づきを記入して、作業ブランチから自分のforkの main へPRを出して提出する。",
+        "hit": [
+          "結果",
+          "PR"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S08",
+        "category": "same",
+        "term": "lecNN-start タグ",
+        "question": "「lecNN-start タグ」とは何ですか？",
+        "found_term": "lecNN-start タグ",
+        "matched_name": "lecNN-start タグ",
+        "raw": "AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグ（例：lec03-start）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+        "hit": [
+          "演習開始",
+          "ブランチ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S09",
+        "category": "same",
+        "term": "既定モデル",
+        "question": "「既定モデル」とは何ですか？",
+        "found_term": "既定モデル",
+        "matched_name": "既定モデル",
+        "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+        "hit": [
+          "gemini-3.5-flash-lite",
+          "レート制限"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S10",
+        "category": "same",
+        "term": "Pi",
+        "question": "「Pi」とは何ですか？",
+        "found_term": "Pi",
+        "matched_name": "Pi",
+        "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+        "hit": [
+          "ターミナル",
+          "コーディングエージェント"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P01",
+        "category": "paraphrase",
+        "term": "LoRA",
+        "question": "Low-Rank Adaptation とは何ですか？",
+        "found_term": "LoRA",
+        "matched_name": "Low-Rank Adaptation",
+        "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+        "hit": [
+          "固定",
+          "行列"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P02",
+        "category": "paraphrase",
+        "term": "量子化",
+        "question": "初心者です。量子化って何のことですか？",
+        "found_term": "量子化",
+        "matched_name": "量子化",
+        "raw": "モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。",
+        "hit": [
+          "ビット",
+          "メモリ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P03",
+        "category": "paraphrase",
+        "term": "エポック",
+        "question": "epoch とは何ですか？",
+        "found_term": "エポック",
+        "matched_name": "epoch",
+        "raw": "学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。",
+        "hit": [
+          "学習データ",
+          "周"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P04",
+        "category": "paraphrase",
+        "term": "ハルシネーション",
+        "question": "初心者です。ハルシネーションって何のことですか？",
+        "found_term": "ハルシネーション",
+        "matched_name": "ハルシネーション",
+        "raw": "LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑える。",
+        "hit": [
+          "事実",
+          "もっともらし"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P05",
+        "category": "paraphrase",
+        "term": "トークン",
+        "question": "token とは何ですか？",
+        "found_term": "トークン",
+        "matched_name": "token",
+        "raw": "LLMがテキストを扱う最小単位。単語や文字の断片に分割される。APIの料金、レート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。日本語は英語より1文字あたりのトークン数が多くなりやすい。",
+        "hit": [
+          "最小単位",
+          "分割"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P06",
+        "category": "paraphrase",
+        "term": "宿題の3レベル",
+        "question": "初心者です。宿題の3レベルって何のことですか？",
+        "found_term": "宿題の3レベル",
+        "matched_name": "宿題の3レベル",
+        "raw": "AIE2026の宿題の構成。「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」の3段階があり、どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。",
+        "hit": [
+          "基礎",
+          "発展"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P07",
+        "category": "paraphrase",
+        "term": "answer.md",
+        "question": "解答ファイルとは何ですか？",
+        "found_term": "answer.md",
+        "matched_name": "解答ファイル",
+        "raw": "AIE2026で各回の演習・宿題の結果を書くファイル。lectures/NN/answer.md にあり、取り組んだレベル・やったこと・結果・気づきを記入して、作業ブランチから自分のforkの main へPRを出して提出する。",
+        "hit": [
+          "結果",
+          "PR"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P08",
+        "category": "paraphrase",
+        "term": "lecNN-start タグ",
+        "question": "初心者です。lecNN-start タグって何のことですか？",
+        "found_term": "lecNN-start タグ",
+        "matched_name": "lecNN-start タグ",
+        "raw": "AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグ（例：lec03-start）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+        "hit": [
+          "演習開始",
+          "ブランチ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P09",
+        "category": "paraphrase",
+        "term": "既定モデル",
+        "question": "デフォルトモデルとは何ですか？",
+        "found_term": "既定モデル",
+        "matched_name": "デフォルトモデル",
+        "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+        "hit": [
+          "gemini-3.5-flash-lite",
+          "レート制限"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P10",
+        "category": "paraphrase",
+        "term": "Pi",
+        "question": "初心者です。Pi って何のことですか？",
+        "found_term": "Pi",
+        "matched_name": "Pi",
+        "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+        "hit": [
+          "ターミナル",
+          "コーディングエージェント"
+        ],
+        "ok": true
+      },
+      {
+        "id": "U01",
+        "category": "unknown",
+        "term": "蒸留",
+        "question": "「蒸留」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U02",
+        "category": "unknown",
+        "term": "MoE",
+        "question": "「MoE」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U03",
+        "category": "unknown",
+        "term": "DoRA",
+        "question": "「DoRA」とは何ですか？",
+        "found_term": "ランク（LoRAのr）",
+        "matched_name": "r",
+        "raw": "LoRAで使う低ランク行列の大きさを決めるハイパーパラメータ。大きいほど表現力が上がるが、学習するパラメータとメモリも増える。",
+        "ok": false
+      },
+      {
+        "id": "U04",
+        "category": "unknown",
+        "term": "lecNN-end タグ",
+        "question": "「lecNN-end タグ」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U05",
+        "category": "unknown",
+        "term": "review.md",
+        "question": "「review.md」とは何ですか？",
+        "found_term": "ランク（LoRAのr）",
+        "matched_name": "r",
+        "raw": "LoRAで使う低ランク行列の大きさを決めるハイパーパラメータ。大きいほど表現力が上がるが、学習するパラメータとメモリも増える。",
+        "ok": false
+      }
+    ]
+  },
+  "search_word_boundary": {
+    "summary": {
+      "label": "search_word_boundary",
+      "seconds": 0.018265,
+      "same": "10/10",
+      "paraphrase": "10/10",
+      "unknown": "5/5"
+    },
+    "rows": [
+      {
+        "id": "S01",
+        "category": "same",
+        "term": "LoRA",
+        "question": "「LoRA」とは何ですか？",
+        "found_term": "LoRA",
+        "matched_name": "LoRA",
+        "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+        "hit": [
+          "固定",
+          "行列"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S02",
+        "category": "same",
+        "term": "量子化",
+        "question": "「量子化」とは何ですか？",
+        "found_term": "量子化",
+        "matched_name": "量子化",
+        "raw": "モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。",
+        "hit": [
+          "ビット",
+          "メモリ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S03",
+        "category": "same",
+        "term": "エポック",
+        "question": "「エポック」とは何ですか？",
+        "found_term": "エポック",
+        "matched_name": "エポック",
+        "raw": "学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。",
+        "hit": [
+          "学習データ",
+          "周"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S04",
+        "category": "same",
+        "term": "ハルシネーション",
+        "question": "「ハルシネーション」とは何ですか？",
+        "found_term": "ハルシネーション",
+        "matched_name": "ハルシネーション",
+        "raw": "LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑える。",
+        "hit": [
+          "事実",
+          "もっともらし"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S05",
+        "category": "same",
+        "term": "トークン",
+        "question": "「トークン」とは何ですか？",
+        "found_term": "トークン",
+        "matched_name": "トークン",
+        "raw": "LLMがテキストを扱う最小単位。単語や文字の断片に分割される。APIの料金、レート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。日本語は英語より1文字あたりのトークン数が多くなりやすい。",
+        "hit": [
+          "最小単位",
+          "分割"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S06",
+        "category": "same",
+        "term": "宿題の3レベル",
+        "question": "「宿題の3レベル」とは何ですか？",
+        "found_term": "宿題の3レベル",
+        "matched_name": "宿題の3レベル",
+        "raw": "AIE2026の宿題の構成。「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」の3段階があり、どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。",
+        "hit": [
+          "基礎",
+          "発展"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S07",
+        "category": "same",
+        "term": "answer.md",
+        "question": "「answer.md」とは何ですか？",
+        "found_term": "answer.md",
+        "matched_name": "answer.md",
+        "raw": "AIE2026で各回の演習・宿題の結果を書くファイル。lectures/NN/answer.md にあり、取り組んだレベル・やったこと・結果・気づきを記入して、作業ブランチから自分のforkの main へPRを出して提出する。",
+        "hit": [
+          "結果",
+          "PR"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S08",
+        "category": "same",
+        "term": "lecNN-start タグ",
+        "question": "「lecNN-start タグ」とは何ですか？",
+        "found_term": "lecNN-start タグ",
+        "matched_name": "lecNN-start タグ",
+        "raw": "AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグ（例：lec03-start）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+        "hit": [
+          "演習開始",
+          "ブランチ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S09",
+        "category": "same",
+        "term": "既定モデル",
+        "question": "「既定モデル」とは何ですか？",
+        "found_term": "既定モデル",
+        "matched_name": "既定モデル",
+        "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+        "hit": [
+          "gemini-3.5-flash-lite",
+          "レート制限"
+        ],
+        "ok": true
+      },
+      {
+        "id": "S10",
+        "category": "same",
+        "term": "Pi",
+        "question": "「Pi」とは何ですか？",
+        "found_term": "Pi",
+        "matched_name": "Pi",
+        "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+        "hit": [
+          "ターミナル",
+          "コーディングエージェント"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P01",
+        "category": "paraphrase",
+        "term": "LoRA",
+        "question": "Low-Rank Adaptation とは何ですか？",
+        "found_term": "LoRA",
+        "matched_name": "Low-Rank Adaptation",
+        "raw": "事前学習済みの重みは固定したまま、重みの更新分を2つの小さな行列の積（低ランク行列）で表し、その小さな行列だけを学習するPEFT手法。学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。本講座の第2回演習ではLoRAを扱う。",
+        "hit": [
+          "固定",
+          "行列"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P02",
+        "category": "paraphrase",
+        "term": "量子化",
+        "question": "初心者です。量子化って何のことですか？",
+        "found_term": "量子化",
+        "matched_name": "量子化",
+        "raw": "モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。",
+        "hit": [
+          "ビット",
+          "メモリ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P03",
+        "category": "paraphrase",
+        "term": "エポック",
+        "question": "epoch とは何ですか？",
+        "found_term": "エポック",
+        "matched_name": "epoch",
+        "raw": "学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。",
+        "hit": [
+          "学習データ",
+          "周"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P04",
+        "category": "paraphrase",
+        "term": "ハルシネーション",
+        "question": "初心者です。ハルシネーションって何のことですか？",
+        "found_term": "ハルシネーション",
+        "matched_name": "ハルシネーション",
+        "raw": "LLMが事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。外部データをツールで参照させる、根拠を示させる、評価で検出する、などで抑える。",
+        "hit": [
+          "事実",
+          "もっともらし"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P05",
+        "category": "paraphrase",
+        "term": "トークン",
+        "question": "token とは何ですか？",
+        "found_term": "トークン",
+        "matched_name": "token",
+        "raw": "LLMがテキストを扱う最小単位。単語や文字の断片に分割される。APIの料金、レート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。日本語は英語より1文字あたりのトークン数が多くなりやすい。",
+        "hit": [
+          "最小単位",
+          "分割"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P06",
+        "category": "paraphrase",
+        "term": "宿題の3レベル",
+        "question": "初心者です。宿題の3レベルって何のことですか？",
+        "found_term": "宿題の3レベル",
+        "matched_name": "宿題の3レベル",
+        "raw": "AIE2026の宿題の構成。「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」の3段階があり、どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。",
+        "hit": [
+          "基礎",
+          "発展"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P07",
+        "category": "paraphrase",
+        "term": "answer.md",
+        "question": "解答ファイルとは何ですか？",
+        "found_term": "answer.md",
+        "matched_name": "解答ファイル",
+        "raw": "AIE2026で各回の演習・宿題の結果を書くファイル。lectures/NN/answer.md にあり、取り組んだレベル・やったこと・結果・気づきを記入して、作業ブランチから自分のforkの main へPRを出して提出する。",
+        "hit": [
+          "結果",
+          "PR"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P08",
+        "category": "paraphrase",
+        "term": "lecNN-start タグ",
+        "question": "初心者です。lecNN-start タグって何のことですか？",
+        "found_term": "lecNN-start タグ",
+        "matched_name": "lecNN-start タグ",
+        "raw": "AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグ（例：lec03-start）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。",
+        "hit": [
+          "演習開始",
+          "ブランチ"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P09",
+        "category": "paraphrase",
+        "term": "既定モデル",
+        "question": "デフォルトモデルとは何ですか？",
+        "found_term": "既定モデル",
+        "matched_name": "デフォルトモデル",
+        "raw": "AIE2026の演習と宿題で標準に使うモデルは gemini-3.5-flash-lite。無料枠のレート制限と講座運営の安定性を考えて選んでいる。環境変数 AIE_MODEL で他のモデルに切り替えてよく、自分で契約したAPIを使ってもよい。",
+        "hit": [
+          "gemini-3.5-flash-lite",
+          "レート制限"
+        ],
+        "ok": true
+      },
+      {
+        "id": "P10",
+        "category": "paraphrase",
+        "term": "Pi",
+        "question": "初心者です。Pi って何のことですか？",
+        "found_term": "Pi",
+        "matched_name": "Pi",
+        "raw": "ターミナルで動くオープンソース（MITライセンス）のコーディングエージェント。最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計。2026年10月に1.0が公開された。npmのパッケージ名は @earendil-works/pi-coding-agent。",
+        "hit": [
+          "ターミナル",
+          "コーディングエージェント"
+        ],
+        "ok": true
+      },
+      {
+        "id": "U01",
+        "category": "unknown",
+        "term": "蒸留",
+        "question": "「蒸留」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U02",
+        "category": "unknown",
+        "term": "MoE",
+        "question": "「MoE」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U03",
+        "category": "unknown",
+        "term": "DoRA",
+        "question": "「DoRA」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U04",
+        "category": "unknown",
+        "term": "lecNN-end タグ",
+        "question": "「lecNN-end タグ」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      },
+      {
+        "id": "U05",
+        "category": "unknown",
+        "term": "review.md",
+        "question": "「review.md」とは何ですか？",
+        "found_term": null,
+        "matched_name": null,
+        "raw": "用語集に見つかりません。",
+        "ok": true
+      }
+    ]
+  }
+}
