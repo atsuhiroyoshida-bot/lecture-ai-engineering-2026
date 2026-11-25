@@ -4,11 +4,11 @@
 
 <!-- [tool call] の行は、表示された行をそのまま貼り付けてください。終わらなかった STEP は、空欄のままでかまいません。 -->
 
-- STEP 1 のツールの名前：
-- STEP 2 の [tool call]：
-- STEP 3 の [tool call]：
-- STEP 4 の [tool call]：
-- 気づき・疑問：
+- STEP 1 のツールの名前：glossary_search_glossary
+- STEP 2 の [tool call]：glossary_search_glossary({'query': '3レベル'})
+- STEP 3 の [tool call]：fetch_fetch({'url': 'https://modelcontextprotocol.io/'})
+- STEP 4 の [tool call]：aws_aws___search_documentation({'search_phrase': 'Amazon S3 versioning overview'})
+- 気づき・疑問：いちばん印象に残ったのは、エージェントのコードには手を入れず、mcp_servers.json に数行足すだけでツールが1個から7個まで増えたことだ。その一方で、増えたツールの説明文はサーバーの作者が書いたものがそのままモデルに渡っていて、fetch には「もともとインターネットにつながっていなかったが、このツールでつながった」とモデルに語りかける文まで入っていた。便利さと引き換えに、他人の書いた指示がモデルに入り込む経路にもなっているのだと感じた。STEP 4 では、AWS に届いていたのは自分の日本語の質問ではなく、Gemini が英語に言い換えた検索語だった。外に何が出ていくかは、モデルが決める引数しだいということになる。入力トークンも STEP 2 の 715 から、STEP 3 で 2,230、STEP 4 では 6,353 まで増えた。ツールの定義が増えたことと、返ってきた結果が大きくなったことのどちらがどれだけ効いているのかは、この出力だけでは切り分けられなかった。疑問として残ったのは、説明文を通して指示が入ってくるのであれば、提供元を確かめる以外に、そのサーバーを信頼してよいかを何で判断すればよいのか、という点だ。
 
 ## 宿題
 
